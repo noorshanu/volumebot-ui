@@ -3,9 +3,9 @@ import { FaInfoCircle } from "react-icons/fa";
 const Dashboard = () => {
   return (
     <div className="  text-white p-4 md:p-8">
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Left section */}
-        <div className="space-y-6">
+        <div className=" space-y-2 sm:space-y-6">
           {/* Account Overview */}
           <div className='bg-gradient-to-r from-red-900 to-black rounded-md shadow-lg p-1'>
           <div className="bg-gray-800 p-4 rounded-md ">
@@ -30,14 +30,14 @@ const Dashboard = () => {
        
           <div className="bg-gray-800 p-4 rounded-md shadow-lg">
             <h2 className="text-lg font-semibold">Exchange Settings</h2>
-            <div className="flex justify-between items-center mt-4 gap-8 ">
+            <div className="flex justify-between flex-col sm:flex-row items-center mt-4 gap-8 ">
               <div className="flex  flex-col w-full sm:w-1/2 ">
                 <label htmlFor="" className=' py-1 text-sm font-semibold text-yellow-400'>
                   Enter Your Token Address :
                 </label>
                <input type="text" className=' text-black px-2 rounded-md border-red-600 border py-1 ' placeholder='Address' />
               </div> 
-              <div className=' w-[1px] h-[37px] bg-white opacity-10 mt-6'>
+              <div className=' w-[1px] h-[37px] bg-white opacity-10 mt-6 hidden sm:block'>
                 
               </div>
               <div className="flex flex-col w-full sm:w-1/2">
